@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#flat {
+    width: fit-content;
+    margin: 16px;
+}
+
+#roof, #base {
+    height: 24px;
+    width: 100%;
+    transform: translateX(-8px);
+    background-color: #686868;
+    border-right: 8px solid #686868;
+    border-left: 8px solid #686868;
+}
+
+#building {
+    width: fit-content;
+    padding: 16px 0 24px 0;
+    background-color: #484848;
+    border-top: 8px solid #383838;
+}
+
+.floor {
+    display: flex;
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    background-color: #484848;
+}
+
+
+.appartment {
+    box-sizing: border-box;
+    border: 8px solid #484848;
+    background-color: black;
+}
+
+.appartment:hover {
+    cursor: pointer;
+}
+
+.appartment.lit {
+    background-color:khaki;
+}
+
+.frame {
+    width: 32px;
+    height: 32px;
+    border: 8px inset #484848;
+}
+
+.appartment.lit .frame {
+    border-color:olive;
+}
+
+
+#dashboard {
+    height: 256px;
+    padding: 8px;
+    border: 1px black solid;
+    font-size: 12px;
+}
